@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Houda Imarine</title>
+  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Mulish', sans-serif;
+    }
+
+    body {
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .cv-container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 35%;
+      background: #130d8b;
+      color: #fff;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .photo-wrapper {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #ffd900;
+      margin-bottom: 20px;
+    }
+
+    .photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .role {
+      font-size: 16px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h3 {
+      width: 100%;
+      border-bottom: 1px solid #444;
+      margin: 15px 0 10px;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .sidebar .contact-info p,
+    .sidebar .languages ul,
+    .sidebar .skills ul {
+      width: 100%;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li::before {
+      content: "•";
+      color: #ffd900;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .main-content {
+      width: 65%;
+      padding: 30px;
+    }
+
+    .main-content .section {
+      margin-bottom: 25px;
+    }
+
+    .main-content .section h2 {
+      color: #130d8b;
+      margin-bottom: 10px;
+      border-left: 4px solid #ffd900;
+      padding-left: 8px;
+    }
+
+    .main-content .section ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .main-content .section ul li::before {
+      content: "–";
+      margin-right: 8px;
+    }
+
+    .main-content .item {
+      margin-bottom: 15px;
+    }
+
+    .main-content .item h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .main-content .item span {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .main-content .item p {
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    #theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    body.dark-mode {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
+
+    .dark-mode .cv-container {
+      background-color: #2e2e2e;
+    }
+
+    .dark-mode .sidebar {
+      background-color: #1e1e1e;
+    }
+
+    .dark-mode .main-content {
+      background-color: #2e2e2e;
+    }
+  </style>
+</head>
+<body>
+  <button id="theme-toggle">Mode sombre</button>
+
+  <div class="cv-container">
+    <aside class="sidebar">
+      <div class="photo-wrapper">
+        <img src="" alt="Photo de profil">
+      </div>
+      <h2 class="name">Houda Imarine</h2>
+      <p class="role">Étudiante</p>
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <p><i class="fas fa-phone"></i> +212 645389962</p>
+        <p><i class="fas fa-envelope"></i> houdaimarine2003@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Quartier El Hassania, Ouarzazate</p>
+      </div>
+      <div class="languages">
+        <h3>Langues</h3>
+        <ul>
+          <li>Arabe (natif)</li>
+          <li>Français (courant)</li>
+          <li>Anglais (soutenu)</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3>Qualités</h3>
+        <ul>
+          <li>Leadership & Gestion d'équipe</li>
+          <li>Organisation & Planification</li>
+          <li>Résolution de problèmes</li>
+        </ul>
+      </div>
+    </aside>
+    <main class="main-content">
+      <section class="section">
+        <h2>À propos</h2>
+        <p>Étudiante en Mathématiques et Informatique passionnée par le développement logiciel et la résolution de problèmes complexes. Actuellement en formation à la Faculté Polydisciplinaire d'Ouarzazate.</p>
+      </section>
+      <section class="section">
+        <h2>Éducation</h2>
+        <div class="item">
+          <h3>Bac +3 en Mathématiques & Informatique</h3>
+          <span>2022–2025</span>
+          <p>Faculté Polydisciplinaire Ouarzazate</p>
+        </div>
+        <div class="item">
+          <h3>Baccalauréat en Sciences Mathématiques Bio</h3>
+          <span>2020</span>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Compétences</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Python</li>
+          <li>Java et JavaScript</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Centres d'intérêt</h2>
+        <ul>
+          <li>Lecture & formation continue</li>
+          <li>Voyages culturels</li>
+          <li>Sports & fitness</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleButton.textContent = document.body.classList.contains('dark-mode')
+        ? 'Mode clair'
+        : 'Mode sombre';
+    });
+  </script>
+</body>
+</html>
